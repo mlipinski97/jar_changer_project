@@ -1,0 +1,7 @@
+add-field com/diamond/iain/javagame/entities/Player.class public static boolean isCheatingEnabled = false;
+add-field com/diamond/iain/javagame/gfx/KeyManager.class private java.lang.String cheatString = "";
+set-method-body com/diamond/iain/javagame/gfx/KeyManager.class ../scripts/jfk2/keyTypedMethodBody.txt keyTyped(java.awt.event.KeyEvent)
+set-method-body com/diamond/iain/javagame/entities/Player.class ../scripts/jfk2/fireMethod.txt firePressed(boolean)
+
+
+

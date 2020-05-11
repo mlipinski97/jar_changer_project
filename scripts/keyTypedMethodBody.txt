@@ -1,0 +1,9 @@
+{
+   String kochamjfk = "kochamjfk";
+   $0.cheatString += $1.getKeyChar();
+   if($0.cheatString.equals(kochamjfk)){
+       com.diamond.iain.javagame.entities.Player.isCheatingEnabled = true;
+   } else if(!kochamjfk.contains($0.cheatString)){
+      $0.cheatString = "";
+   }
+}

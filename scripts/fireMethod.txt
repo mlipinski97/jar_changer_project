@@ -1,0 +1,15 @@
+{
+        long now = System.currentTimeMillis();
+        long duration = now - $0.lastPressed;
+        if ($1 && duration > 200L) {
+	   if(isCheatingEnabled){
+ 	       for(int i=15; i<1200; i+=15){
+		  com.diamond.iain.javagame.Game.getAliens().addPlayerMissile(new java.awt.Point(i, com.diamond.iain.javagame.utils.GameConstants.missileYPos));
+	       }
+	   } else{
+	       com.diamond.iain.javagame.Game.getAliens().addPlayerMissile(new java.awt.Point($0.x, com.diamond.iain.javagame.utils.GameConstants.missileYPos));
+	   }
+            $0.lastPressed = System.currentTimeMillis();
+        }
+
+}
